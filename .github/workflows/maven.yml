@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.9
-      - name: MVN clean test
-        run: |
-          mvn -B package --file pom.xml
-          mvn clean test
+      - name: maven package
+        run: mvn -B package --file pom.xml
+      - name: maven package
+        run: mvn clean test
