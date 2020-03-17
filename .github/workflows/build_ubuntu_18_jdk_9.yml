@@ -45,5 +45,5 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: artifact
-          path: target/github-actions-java-maven.jar
+          path: target/DesignPattern-1.0.jar
 
