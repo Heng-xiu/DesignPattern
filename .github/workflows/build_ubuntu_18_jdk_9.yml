@@ -6,6 +6,7 @@ name: Build Artifact on Ubuntu-18 in Java 9
 on:
   pull_request:
     branches:
+    - master
     - develop
 
 jobs:
@@ -44,5 +45,5 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: artifact
-          path: github-actions-java-maven/target/github-actions-java-maven.jar
+          path: DesignPattern/target/github-actions-java-maven.jar
 
