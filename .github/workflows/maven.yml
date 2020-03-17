@@ -19,7 +19,7 @@ jobs:
         java: [9, 13]
     name: Compile Java Version ${{ matrix.java }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1
       - name: Set up Java
         uses: actions/setup-java@v1
         with:
@@ -30,7 +30,7 @@ jobs:
     needs: compile
     name: Build Maven Maven project
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1
       - uses: actions/cache@v1
         with:
           path: ~/.m2/repository
